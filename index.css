@@ -135,6 +135,9 @@ body {
     text-decoration: none;
     color: ghostwhite;
 }
+#carouselExampleIndicators{
+    display: block;
+}
 
 
 /*------------------MOB-NAV-BAR-----------------------*/
