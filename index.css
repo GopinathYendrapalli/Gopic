@@ -8,10 +8,12 @@ html {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family: monospace;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: monospace;
+    
     display: grid;
 }
 
@@ -25,6 +27,9 @@ body {
 /*     --------------------------------------------------    */
 
 /*------------------PC-NAV-BAR-----------------------*/
+
+
+
 #ham-icon {
     display: none;
 }
@@ -34,7 +39,17 @@ body {
     background-color: transparent;
     z-index: 9;
     width: 100%;
+    transition: background-color 0.4s ease-out;
+    box-sizing: border-box;
 }
+#nav-bar.scroll {
+  background-color: #A1572F;
+  color: #eef;    z-index: 9;
+    height:60px;
+
+}
+
+
 
 #brand-logo {
     width: 85px;
@@ -402,4 +417,275 @@ position: absolute !important;
     }
 
 }
+/*     --------------------------------------------------    */
+/*     -------------------SECTION2-----------------------    */
+/*     --------------------------------------------------    */
+
+#section-2 {
+    background: #1c1c1c;
+    opacity: 0.9;
+    width: 100%;
+    height: 1700px;
+}
+
+#categories {
+    width: 100%;
+    height: 150px;
+
+}
+
+#border {
+    margin: auto;
+    width: 7.5%;
+    border-bottom: 0.5px solid ghostwhite;
+
+}
+
+#text-1 {
+    color: ghostwhite;
+    font-family: 'Roboto', sans-serif;
+    font-size: 300%;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+#gallery {
+    background: #1c1c1c;
+    overflow: hidden;
+    padding-left: 7.5%;
+    margin: auto;
+    width: 100%;
+
+}
+
+.img {
+    opacity: 0.7;
+    float: left;
+    height: 450px;
+    width: 30%;
+}
+.img:hover {
+    background-color: ghostwhite;
+    opacity: 0.1;
+    float: left;
+    transform: scale(1.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.Con-But1{
+    
+position: absolute !important;
+    margin-top: 15%;
+    margin-left: 8% !important;
+    
+    z-index:9; 
+    opacity: 0;
+    
+    /*Change this css for position change of button*/
+}
+img:hover .Con-But1{
+    opacity: 1 !important;
+}
+
+.Con-But a {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.Con-But-Need {
+	position: relative !important;
+	margin: auto !important;
+	padding: 19px 22px !important;
+	transition: all .2s ease !important;
+}
+
+.Con-But-Need:before {
+	content: "" !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	display: block !important;
+	border-radius: 28px !important;
+	background: rgba(255, 171, 157, 0.5) !important;
+	width: 56px !important;
+	height: 56px !important;
+	transition: all .3s ease !important;
+}
+
+.Con-But-Need span {
+	position: relative !important;
+	font-size: 16px !important;
+	line-height: 18px !important;
+	font-weight: 900 !important;
+	letter-spacing: .25em !important;
+	text-transform: uppercase !important;
+	vertical-align: middle !important;
+    font-family: 'Roboto', sans-serif;
+    color: ghostwhite;
+}
+
+.Con-But-Need svg {
+	position: relative !important;
+	top: 0 !important;
+	margin-left: 10px !important;
+	fill: none !important;
+	stroke-linecap: round !important;
+	stroke-linejoin: round !important;
+	stroke: #111 !important;
+	stroke-width: 2 !important;
+	transform: translateX(-5px) !important;
+	transition: all .3s ease !important;
+}
+
+.Con-But-Need:hover:before {
+	width: 100% !important;
+	background: #f97509 !important;
+}
+
+.Con-But-Need:hover svg {
+	transform: translateX(0) !important;
+}
+
+.Con-But-Need:active {
+	transform: scale(0.96) !important;
+}
+/*     --------------------------------------------------    */
+/*     -------------------SECTION3-----------------------    */
+/*     --------------------------------------------------    */
+.contact-Form {
+   
+    position: relative;
+    height: 100%;
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.contact-Form .Contact-Form-Content{
+    position: relative;
+    top: -45px;
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+}
+.contact-Form .Contact-Form-Content h2{
+    font-size: 36px;
+    font-weight: 500px;
+    color: #fff;
+
+}
+.contact-Form .Contact-Form-Content p{
+    font-weight: 300px;
+    color: #fff;
+
+}
+.Contact-Form-Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.Contact-Form-Container .ContactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Contact-Form-Container .ContactInfo .box{
+    position: relative;
+    padding: 20px 0 20px 0;
+    display: flex;
+}
+
+.Contact-Form-Container .ContactInfo .box .Contact-Form-Icons{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.Contact-Form-Container .ContactInfo .box .Contact-Form-Text{
+    
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    
+}
+
+.Contact-Form-Container .ContactInfo .box .Contact-Form-Text h3{
+    font-weight: 500;
+    color: #00bcd4;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+.ContactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.ContactForm h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500px;
+}
+.ContactForm .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.ContactForm .input-box input,.ContactForm .input-box textarea{
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize :none;
+}
+.ContactForm .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16x;
+    pointer-events: none;
+    color: #666;
+    transition: 0.5%;
+    margin: 10px 0;
+}
+.ContactForm .input-box input:focus ~ span , .ContactForm .input-box input:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.ContactForm .input-box textarea:focus ~ span , .ContactForm .input-box textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.ContactForm .input-box input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
 
